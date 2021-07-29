@@ -1,1 +1,2 @@
-we extract reddit the reddit posts by using the start date and end datre date of a subreddit. 
+By using the pushshift API 
+we extract the reddit posts by using the start date and end end date of a subreddit. 
