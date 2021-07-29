@@ -12,13 +12,13 @@ import datetime
 # In[5]:
 
 
-reddit = praw.Reddit(client_id='99HUPgR7vrbuag', client_secret='2NtnOA1WK-5NL-ncAex5tOhBB0JXxA', user_agent='tester1')
+reddit = praw.Reddit(client_id='', client_secret='', user_agent='')
 
 
 # In[6]:
 
 
-subs = reddit.subreddit('4kTV').hot(limit=1)
+subs = reddit.subreddit('#subreddit_name').hot(limit=1)
 for i in subs:
     print(dir(i))
 
@@ -27,7 +27,7 @@ for i in subs:
 
 
 com = []
-subs = reddit.subreddit('4kTV').hot(limit=1000)
+subs = reddit.subreddit('#subreddit_name').hot(limit=n) # n = number of posts
 for i in  subs:
     comments= i.comments
     for j in comments:
@@ -41,5 +41,5 @@ com
 # In[12]:
 
 
-com.to_csv("C:\\Users\\DELL\\Desktop\\happy.csv")
+com.to_csv("#folder_loaction  .csv")
 
